@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+}
+/* sidebar ===================================================== */
+.sidebar{
+    background-color: black;
+    width: 160px;
+    color: white;
+}
+.sidebar ul li{
+    color: #AAA;
+    font-family: system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    padding-left: 16px;
+    list-style-type: none;
+    border-bottom: #3E3E3E 1px solid;
+}
+.sidebar ul li:hover{
+    color: white;
+    background-color: #3E3E3E;
+}
+
+
+
+/* content====================================================== */
+.content{
+    width: 100%;
+}
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.logo>img{
+    height: 122px;
+    width: 310px;
+    margin-top: 20px;
+}
+.intro{
+    width: 80%;
+    margin: 30px auto;
+    height: 210px;
+    background-color: #EFEFEF;
+}
+.intro-title{
+    text-align: center;
+    color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 38px 20px 18px;
+}
+.intro-content{
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 160px
+}
+.post{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.post-item{
+    width: 282px;
+    min-height: 200px;
+}
+.post-title{
+    color: #000;
+    font-family: Roboto;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 18px;
+}
+.post-content{
+    text-align: justify;
+    color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.post-content img{
+    float: left;
+    width: 128px;
+    height: 128px;
+    padding: 0 5px;
+}
+.copyright{
+    height: 60px;
+    color: #3E3E3E;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 100px ;
+}
+.copyright p{
+    padding-left: 130px; 
+    line-height: 60px ;
+}
