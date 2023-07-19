@@ -12,6 +12,7 @@
     background-color: black;
     width: 160px;
     color: white;
+    
 }
 .sidebar ul li{
     color: #AAA;
@@ -28,6 +29,10 @@
     color: white;
     background-color: #3E3E3E;
 }
+.button-mobile-menu{
+    display:none
+}
+
 
 
 
@@ -48,7 +53,7 @@
 .intro{
     width: 80%;
     margin: 30px auto;
-    height: 210px;
+    min-height: 210px;
     background-color: #EFEFEF;
 }
 .intro-title{
@@ -119,4 +124,61 @@
 .copyright p{
     padding-left: 130px; 
     line-height: 60px ;
+}
+
+
+@media only screen and (max-width: 480px){
+    .container{
+        width:100%;
+        display: contents;
+    }
+    
+    .sidebar{ 
+        background-color: black;
+        width: 100%;
+        color: white;
+        min-height: 50px;
+    }
+    .mobile-menu{
+        display:none;
+        text-align: right;
+        z-index: 1;
+    }
+    .mobile-menu li{
+        padding-right: 20px ;
+    }
+    .button-mobile-menu{
+        height: 50px; 
+        width: 100%;
+        background-color: #000;
+        color: #AAA;
+        font-size: 21px;
+        text-align: right;
+        display: block;
+        line-height: 50px;
+    }
+    .button-mobile-menu p{
+        padding-right: 20px;
+    }
+    .sidebar:hover .button-mobile-menu{
+        background-color:#3E3E3E;
+        color: white;
+    }
+    .sidebar:hover .mobile-menu{
+        display: block;
+    }
+
+    .intro-content{
+        color: #000;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 0 10px 16px 10px;
+    }
+    .post-item{
+        margin-top: 20px;
+    }
 }
